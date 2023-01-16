@@ -11,8 +11,12 @@ public class WordleMain {
 			//System.out.println(puz.getWord());
             System.out.print("\nMake a guess: ");
             String guess = scan.nextLine();
+            if(puz.isWord(guess)){
             puz.check(guess);
             puz.getGrid().show();
+            }
+            else
+            	System.out.println("This is not a word that I know");
             clearScreen();
         }
 		if(puz.alive()) {

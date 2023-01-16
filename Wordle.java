@@ -84,6 +84,13 @@ public class Wordle {
 		dmg();
 		System.out.println("\n");
 	}
+	public boolean isWord(String guess) {
+		for(String str:list) {
+			if(guess.equals(str))
+				return true;
+		}
+		return false;
+	}
 	public Grid getGrid() {
 		return g;
 	}

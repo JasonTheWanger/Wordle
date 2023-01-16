@@ -14,19 +14,19 @@ public class Grid {
 			//correct
 			//System.out.print("\uD83D\uDFE9");
 			ans[i]=("C");
-			grid.add(true);
+			grid.set(i, true);
 		}
 		else if(n==1) {
 			//half correct
 			//System.out.print("\uD83D\uDFE8");
 			ans[i]="H";
-			grid.add(false);
+			grid.set(i,false);
 		}
 		else if(n==2) {
 			//incorrect
 //			System.out.print("\uD83D\uDFEB");
 			ans[i]="I";
-			grid.add(false);
+			grid.set(i,false);
 		}
 	}
 	public void resetList() {
